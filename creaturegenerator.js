@@ -31,7 +31,7 @@ async function loadCreatures() {
 const creaturelist = loadCreatures();
 
 
-// var creatures = JSON.parse(creaturelist, function (key, value) {
+var creatures = JSON.parse(creaturelist, function (key, value) {
      return value;
   });
 

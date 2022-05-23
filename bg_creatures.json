@@ -1,5 +1,4 @@
-{
-    "creatures":[
+{"creatures":[
         {"index":"001","name":"Fostooth Gravelback","plane":"Ágil","description":"This shy rodent hangs out among rocky piles and gets its name from its habit of collecting bits of gravel in the concave hollow on its back, which it uses to throw and stun insects."},
         {"index":"002","name":"Flipdop Hoodcap","plane":"Pese Malosi","description":"Looking much like a land-walking jellyfish, the Flipdop has a plated membrane it can flip up around its soft head to protect itself from predators, which makes it look like it’s wearing a hooded sweater."},
         {"index":"003","name":"Brazle Fur","plane":"Alohi","description":"The Brazle Fur is a brilliantly colored feline with fiber-optic fur: each follicle is hollow and filled with a clear crystalline substance. It can illuminate the ends, causing its fur to dazzle and blind prey or would be predators."},
@@ -71,5 +70,4 @@
         {"index":"069","name":"Grasshopper Lizard","plane":"Pese Malosi","description":"The grasshopper lizard is not an insect nor a reptile, but a creature woven from many insects and reptiles all working together. The grasshopper lizard forms deep burrows in the earth, mainly feeding on bugs and synthesizing nutrients from the soil. In the summer, their quiet symphonies can be heard."},
         {"index":"070","name":"Lettucewing Bat","plane":"Alohi","description":"The lettucewing bat’s days-long sleep cycle allows it to flit and wander both at night and during the day, and while it takes on a dark, smoky hue at night, it transforms into a pale green during the day, resembling a leaf floating on the wind. Native in sunny regions."},
         {"index":"071","name":"Canyon Wolfdragon","plane":"Cluthar","description":"A massive mountain- and canyon-dwelling creature, the wolfdragon sits lazily atop the food chain in several biomes on Cluthar. The wolfdragon is known to hoard treasure and will often let captive creatures escape if they offer a worthy enough sacrifice — gold or shiny jewels especially catch its wicked, discerning eye."}
-    ]
-}
+    ]}

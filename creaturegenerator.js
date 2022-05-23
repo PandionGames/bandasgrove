@@ -25,7 +25,7 @@ const Typer = {
 async function loadCreatures() {
   const response = await fetch('https://raw.githubusercontent.com/PandionGames/bandasgrove/main/bg_creatures.json');
   const creaturelist = await response.json();
-  console.log(creaturelist); 
+  console.log(response); 
 };
 
 const creaturelist = loadCreatures();

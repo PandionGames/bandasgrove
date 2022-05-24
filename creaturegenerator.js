@@ -32,6 +32,10 @@
         async ask() {
             if (this.isTyping) return;
             this.isTyping = true;
+            document.querySelector("#indexoutput").innerText = "-";
+            document.querySelector("#nameoutput").innerText = "-";
+            document.querySelector("#planeoutput").innerText = "-";
+            document.querySelector("#descriptionoutput").innerText = "-";
             const spottedcreature = await spotcreature();
             await Typer.type("#indexoutput", spottedcreature["index"], 15);
             await Typer.type("#nameoutput", spottedcreature["name"], 15);

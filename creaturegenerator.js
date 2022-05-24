@@ -21,16 +21,10 @@
     };
 
     async function spotcreature() {
-    const response = await fetch('https://raw.githubusercontent.com/PandionGames/bandasgrove/main/bg_creatures.json');
-    const creaturelist = await response.json();
-
-    const rng = Math.floor(Math.random() * creaturelist.creatures.length-1);
-    // console.log(creaturelist.creatures);
-    console.log(creaturelist.creatures[rng].index);
-    console.log(creaturelist.creatures[rng].name);
-    console.log(creaturelist.creatures[rng].description);
-    const spottedcreature = creaturelist.creatures[rng];
-    return spottedcreature;
+        const response = await fetch('https://raw.githubusercontent.com/PandionGames/bandasgrove/main/bg_creatures.json');
+        const creaturelist = await response.json();
+        const rng = Math.floor(Math.random() * creaturelist.creatures.length-1);
+        return creaturelist.creatures[rng];
     };
 
     const QuestionOracle = {
@@ -39,16 +33,13 @@
             if (this.isTyping) return;
             this.isTyping = true;
             const spottedcreature = await spotcreature();
-            console.log(spottedcreature);
-            console.log(spottedcreature["name"]);
-            console.log(spottedcreature["description"]);
-            console.log(spottedcreature["index"]);
-            let displaytext =  spottedcreature["index"] + " | " + spottedcreature["name"] + " | " + spottedcreature["description"];
-            await Typer.type("#creaturegeneratortext", displaytext, 25);
+            await Typer.type("#indexoutput", spottedcreature["index"], 15);
+            await Typer.type("#nameoutput", spottedcreature["name"], 15);
+            await Typer.type("#planeoutput", spottedcreature["plane"], 15);
+            await Typer.type("#descriptionoutput", spottedcreature["description"], 15);
             this.isTyping = false;
         },
     };
-
 
     async function wait(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));

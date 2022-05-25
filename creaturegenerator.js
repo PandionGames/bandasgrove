@@ -28,11 +28,18 @@ const Typer = {
         async ask() {
             if (this.isTyping) return;
             this.isTyping = true;
+            
+            // clean up the fields
             document.querySelector("#indexoutput").innerHTML = '<span style="font-weight:bold;">Index: </span>';
             document.querySelector("#nameoutput").innerHTML = '<span style="font-weight:bold;">Name: </span>';
             document.querySelector("#planeoutput").innerHTML = '<span style="font-weight:bold;">Plane: </span>';
             document.querySelector("#descriptionoutput").innerHTML  = '<span style="font-weight:bold;">Description: </span>';
+
+            // call for a random creature, store the array.
             const spottedcreature = await spotcreature();
+
+            // call the individual key:values of spottedcreature and send them to the typer, 
+            // which writes the value in the text fields.
             await Typer.type("#indexoutput",spottedcreature["index"], 15);
             await Typer.type("#nameoutput", spottedcreature["name"], 15);
             await Typer.type("#planeoutput", spottedcreature["plane"], 15);
@@ -44,4 +51,4 @@ const Typer = {
     async function wait(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
     }
-    </script>
+</script>

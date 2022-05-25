@@ -7,11 +7,8 @@ const Typer = {
                 const chunkText = chunk + ".";
                 const characters = chunkText.split("");
                 for (const character of characters) {
+                    document.querySelector(selector).innerHTML += text.substr(characterCount,1);
                     characterCount++;
-                    document.querySelector(selector).innerText += text.substr(
-                    0,
-                    characterCount
-                    );
                     await wait(speed);
                 }
             await wait(175);

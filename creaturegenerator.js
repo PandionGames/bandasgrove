@@ -1,7 +1,6 @@
 <script>
-    const Typer = {
+const Typer = {
         async type(selector, text, speed = 1) {
-            document.querySelector(selector).innerText = "";
             const chunks = text.split(".");
             let characterCount = 0;
             for (const chunk of chunks) {
@@ -9,7 +8,7 @@
                 const characters = chunkText.split("");
                 for (const character of characters) {
                     characterCount++;
-                    document.querySelector(selector).innerText = text.substr(
+                    document.querySelector(selector).innerText += text.substr(
                     0,
                     characterCount
                     );
@@ -32,12 +31,12 @@
         async ask() {
             if (this.isTyping) return;
             this.isTyping = true;
-            document.querySelector("#indexoutput").innerText = "-";
-            document.querySelector("#nameoutput").innerText = "-";
-            document.querySelector("#planeoutput").innerText = "-";
-            document.querySelector("#descriptionoutput").innerText = "-";
+            document.querySelector("#indexoutput").innerHTML = '<span style="font-weight:bold;">Index: </span>';
+            document.querySelector("#nameoutput").innerHTML = '<span style="font-weight:bold;">Name: </span>';
+            document.querySelector("#planeoutput").innerHTML = '<span style="font-weight:bold;">Plane: </span>';
+            document.querySelector("#descriptionoutput").innerHTML  = '<span style="font-weight:bold;">Description: </span>';
             const spottedcreature = await spotcreature();
-            await Typer.type("#indexoutput", spottedcreature["index"], 15);
+            await Typer.type("#indexoutput",spottedcreature["index"], 15);
             await Typer.type("#nameoutput", spottedcreature["name"], 15);
             await Typer.type("#planeoutput", spottedcreature["plane"], 15);
             await Typer.type("#descriptionoutput", spottedcreature["description"], 15);

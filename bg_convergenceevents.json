@@ -1,5 +1,5 @@
-{"planes":[{
-    "name":"Quantum Woods", "features": [
+{"planes":[
+    {"name":"Quantum Woods", "features": [
         "A strange red glow emanates from all the leaves.",
         "At night, the woods lay down like they’re sleeping.",
         "Through the trees you can see yourself peering in.",
@@ -7,5 +7,50 @@
         "Spirits gather at the edge, always watching outwards.",
         "A shimmer of an old camp appears at twilight. Some nights, someone is having a campfire."
         ]
-    }]
+    },
+    {"name":"The Lake", "features": [
+        "Old upturned canoes lie next to an algae covered dock.",
+        "A whirlpool spins on the surface.",
+        "The lake drops in depth quickly to an unknowable deep.",
+        "Dense vegetation grows on the surface, making the lake walkable.",
+        "A gentle sloping shore allows for a beach.",
+        "The water bulges higher than the shoreline in the middle, obscuring the view of the other side."
+        ]
+    },
+    {"name":"Ágil", "features": [
+        "Fosstooth Gravelback (1) warrens dot rocky fields.",
+        "A forgotten poetry ring in need of repair.",
+        "Mountain meadows. Highland Flitwings (42) dart about.",
+        "Rocky cliffs, where young Ágilians profess their love.",
+        "Grassy fields, full of diverse flora and fauna.",
+        "A long pond, Ágilians challenge each other to swim across."
+        ]
+    },
+    {"name":"Alohi", "features": [
+        "A dense, humid, jungle full flora of neon rainbow coloring.",
+        "A large gathering of Rainbow Crescents (41) cling to the flora here.",
+        "A sunbathing ring in a clearing, originally used for photosynthesis gatherings.",
+        "An old tower, overlooking a dazzling forest of flora and fauna.",
+        "A wetland marsh, with raised platforms for camping.",
+        "A waterfall flowing upwards, behind it is a cave.",
+        ]
+    },
+    {"name":"Cluthar", "features": [
+        "Snow huts mark campsites among hip deep snow paths.",
+        "An icy pond is surrounded by Foxfur Sedge (40).",
+        "A cozy campground built into a large mouthed cave. Hiking trails strike off into its depths.",
+        "A forest of Dendelion (13) spreads across the landscape, providing unusual warmth in the area.",
+        "A campground has been built around a hibernating Bonecage Wolf (10), providing year-round comfort",
+        "A dense gathering of Yoomfomp (4), always ready to talk. "       
+        ]
+    },
+    {"name":"Pese Malosi", "features": [
+        "A creek babbles in the air, winds directing its flow.",
+        "Massive, coral-like creatures live here, creating hundreds of twisting corridors to walk and camp in.",
+        "Interwoven vines the Malosians say is an old Bonder (25) home, which they pay great respect to.",
+        "A dry well, surrounded by a forested swamp",
+        "Music fills the air. Choiring Fae (44) structure is being formed here by their melodies.",
+        "A chanting ring nestled in a large, damp cavern."
+        ]
+    },
 }

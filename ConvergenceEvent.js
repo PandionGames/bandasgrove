@@ -1,13 +1,15 @@
 <script>
     async function pickaplane() {
         const response = await fetch('https://raw.githubusercontent.com/PandionGames/bandasgrove/main/bg_convergenceevents.json');
-        const eventlist = await response.json();
-        console.log(eventlist);
-        const planepick = Math.floor(Math.random() * eventlist.planes.length-1);
-        console.log(eventlist.planes[planepick]);
-        const featurepick = Math.floor(Math.random() * eventlist.planes[planepick].length-1);
-        console.log(eventlist.planes[planepick][featurepick])
-        return eventlist.planes[rng];
+        const planelist = await response.json();
+        console.log(planelist);
+        console.log(planelist.planes);
+        console.log(planelist.planes.length);
+        const rng = Math.floor(Math.random() * planelist.planes.length-1);
+        console.log(planelist.planes[0][0]);
+        const featurepick = Math.floor(Math.random() * planelist.planes[rng].length-1);
+        console.log(planelist.planes[rng][featurepick])
+        return planelist.planes[rng];
     };
 
     const ConvergenceEvent = {
@@ -27,7 +29,7 @@
 
             // call the individual key:values of spottedcreature and send them to the typer, 
             // which writes the value in the text fields.
-            await Typer.type("#planefragmentoutput",plane["feature"], 15);
+            await Typer.type("#planefragmentoutput",plane, 15);
             this.isTyping = false;
         },
     };

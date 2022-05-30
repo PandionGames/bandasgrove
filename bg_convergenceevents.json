@@ -1,11 +1,11 @@
 {"planes":[{
-    "name":"Quantum Woods", "features": [{
-        "0":"A strange red glow emanates from all the leaves",
-        "1":"At night, the woods lay down like they’re sleeping",
-        "2":"Through the trees you can see yourself peering in",
-        "3":"Trees move about whenever you look away",
-        "4":"Spirits gather at the edge, always watching outwards",
-        "5":"A shimmer of an old camp appears at twilight. Some nights, someone is having a campfire."
-        }]
+    "name":"Quantum Woods", "features": [
+        "A strange red glow emanates from all the leaves.",
+        "At night, the woods lay down like they’re sleeping.",
+        "Through the trees you can see yourself peering in.",
+        "Trees move about whenever you look away.",
+        "Spirits gather at the edge, always watching outwards.",
+        "A shimmer of an old camp appears at twilight. Some nights, someone is having a campfire."
+        ]
     }]
 }
